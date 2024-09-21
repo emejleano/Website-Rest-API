@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling dasar untuk body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container untuk layout */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk heading */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Styling untuk indikator loading */
+#loading {
+  display: none;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+/* Styling untuk custom elements */
+note-form,
+note-list {
+  margin-bottom: 20px;
+}
+
+/* Styling untuk form catatan */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+textarea {
+  font-size: 1em;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+/* Styling untuk tombol */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling untuk daftar catatan */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #e9ecef;
+}
+
+li h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+li p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #666;
+}
+
+/* Styling untuk tombol dalam item catatan */
+/* Tambahkan style untuk tombol arsip dan hapus */
+li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+li button.archive-btn {
+  background-color: #007bff;
+}
+
+li button.archive-btn:hover {
+  background-color: #0056b3;
+}
+
+li button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+
+li button:hover {
+  background-color: #c82333;
+}
